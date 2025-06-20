@@ -1,0 +1,67 @@
+
+Progetto: Predizione della qualità del vino
+
+Introduzione
+
+In questo progetto si analizzano i dati relativi a caratteristiche chimico-fisiche di vini rossi
+provenienti dal dataset "Wine Quality" (UCI Machine Learning Repository).
+
+L’obiettivo è costruire un modello predittivo in grado di stimare la qualità del vino a partire
+dalle sue caratteristiche, e valutare quali sono le variabili più importanti per la previsione.
+
+Dataset
+
+Il dataset contiene 1599 osservazioni di vini rossi, con 12 variabili:
+
+- 11 variabili indipendenti (es. acidity, sulphates, alcohol, ecc.)
+- 1 variabile target: quality (punteggio da 0 a 10)
+
+Le principali variabili sono:
+- fixed acidity
+- volatile acidity
+- citric acid
+- residual sugar
+- chlorides
+- free sulfur dioxide
+- total sulfur dioxide
+- density
+- pH
+- sulphates
+- alcohol
+- quality (target)
+
+Analisi Esplorativa (EDA)
+
+Dall'analisi esplorativa emerge che:
+
+- La qualità dei vini è distribuita principalmente tra i valori 5 e 6.
+- Le variabili più correlate positivamente con la qualità sono: alcohol, sulphates, citric acid.
+- Le variabili più correlate negativamente sono: volatile acidity, density.
+
+Modello di regressione
+
+È stato utilizzato un Random Forest Regressor con 100 alberi e split train/test 80/20.
+
+Metriche di valutazione:
+- RMSE = 0.55
+- R² = 0.54
+
+Importanza delle feature
+
+Le variabili più importanti risultano:
+1. alcohol
+2. sulphates
+3. volatile acidity
+4. total sulfur dioxide
+
+Conclusioni
+
+Il modello Random Forest ha ottenuto un R² di circa 0.54: è in grado di spiegare il 54%
+della variabilità nella qualità del vino.
+
+L’alcool risulta essere la variabile più influente sulla qualità, seguito da sulphates e volatile acidity.
+
+Possibili miglioramenti futuri:
+- Utilizzo di modelli più avanzati (es. XGBoost, LightGBM)
+- Tuning degli iperparametri
+- Bilanciamento del dataset (la distribuzione delle classi è sbilanciata)
