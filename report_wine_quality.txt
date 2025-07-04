@@ -65,3 +65,6 @@ Possibili miglioramenti futuri:
 - Utilizzo di modelli più avanzati (es. XGBoost, LightGBM)
 - Tuning degli iperparametri
 - Bilanciamento del dataset (la distribuzione delle classi è sbilanciata)
+
+link tesina simile
+https://www.kaggle.com/code/devraai/vinho-verde-red-wine-quality-analysis/comments
